@@ -1,0 +1,11 @@
+create database sample;
+use sample;
+create table student(regno int primary key,full_name varchar(255),email varchar(255) unique key , phonenumber long);
+ insert into student(regno,full_name,email,phonenumber)values(1001,"bharath","bharathbharath8785@gamil.com",7010756961);
+insert into student(regno,full_name,email,phonenumber) values(1002,"anbu","anbu@gmail.com",9876543422),
+ (1003,"vasu","vasu@gmail.com",1234567890),
+ (1004,"ram","ram@gmail.com",2345678901),
+ (1005,"akash","akash@gmailcom",8908908908);
+ alter table student rename column full_name to fullname;   
+ select * from student;
+ select fullname as student_name from student;
